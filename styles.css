@@ -1,0 +1,104 @@
+/* Estilos generales */
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  background-image: url('img/fondo_restaurante.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #333;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  padding: 20px 0;
+  background-color: #0080FF;
+  color: #FFFFFF;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-size: 36px;
+}
+
+h2 {
+  font-family: "Cinzel Decorative", cursive, sans-serif;
+  font-size: 28px;
+  text-align: center;
+  color: #E0E0E0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 10px;
+}
+
+/* Estilos para los bloques de sección */
+.section {
+  margin: 30px auto;
+  max-width: 800px;
+  background-color: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+/* Luces LED */
+.section::before {
+  content: "";
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  border-radius: 8px;
+  box-shadow: inset 0 0 10px rgba(0, 0, 255, 0.8),
+              inset 0 0 20px rgba(0, 0, 255, 0.6),
+              inset 0 0 30px rgba(0, 0, 255, 0.4),
+              inset 0 0 40px rgba(0, 0, 255, 0.2),
+              inset 0 0 50px rgba(255, 255, 255, 0.2),
+              inset 0 0 60px rgba(255, 255, 255, 0.1),
+              inset 0 0 70px rgba(255, 255, 255, 0.05);
+}
+
+/* Estilos para la tabla */
+table {
+  border-collapse: collapse;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+th, td {
+  padding: 12px;
+  text-align: left;
+}
+
+th {
+  background-color: #0080FF;
+  color: #FFFFFF;
+}
+
+tr:nth-child(even) {
+  background-color: #B0C4DE;
+}
+
+tr:nth-child(odd) {
+  background-color: #FFFFFF;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+}
+
+/* Estilos para el botón */
+.btn {
+  background-color: #0080FF;
+  color: #FFFFFF;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0066CC;
+}
